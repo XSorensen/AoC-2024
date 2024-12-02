@@ -1,7 +1,5 @@
 import re
 
-
-
 def main():
     print("Task 1:")
     task1()
@@ -69,8 +67,6 @@ def task2():
         print(f'Distance: {distance}')
 
     return
-
-
 
 if __name__ == "__main__":
     main()
