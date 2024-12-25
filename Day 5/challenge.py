@@ -45,15 +45,11 @@ def valid_update(update, rules):
     printed_pages = []
 
     for page in update:
-        print(f"Page: {page}")
         # if the page has special print rules
         if page in rules:
             barred_pages = rules[page]
-            # print(f"BarredPages: {barred_pages}")
             for i in barred_pages:
                 if i in printed_pages:
-                    # print(f"i: {i}")
-                    # print(f"Printed pages: {printed_pages}")
                     return False
         
         printed_pages.append(page)    
